@@ -36,12 +36,11 @@ a:focus {
   padding:2em 30px;
 }
 .sidebar h1{
-	font-size:2.5em;
+	font-size:2.0em;
 	font-weight:700;
 	margin-bottom:1em;
 	COLOR:#fff;
 	font-family: 'Varela Round', sans-serif;
-	
 }
 .sidebar img{
 	border:1px solid #fff;
