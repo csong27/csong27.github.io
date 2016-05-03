@@ -24,6 +24,20 @@ s.src = "https://upload.wikimedia.org/wikipedia/commons/c/ca/Ja-Tsu.oga";
 function PlaySound() {
 	s.play();
 }
+
+var yearMap = {
+	1: "first",
+	2: "second",
+	3: "third",
+	4: "forth",
+	5: "fifth",
+	6: "sixth",
+	7: "seventh",
+	8: "eighth"
+};
+
+var whichYear = yearMap[new Date().getFullYear() - 2015];
+
 </script>
 
 <body>
@@ -51,9 +65,9 @@ function PlaySound() {
 		
 		<section id="profile">
 			<h2>About Me</h2>
-			<p itemprop="description">I am an incomming first-year Computer Science PhD student at Cornell University. My current research interests are machine learning
-			and its applications in fields such as natural language processing.</p>
-			<p>Before comming to Cornell, I spent wonderful 4 years at <a href="www.emory.edu">Emory University</a>, where I worked closely 
+			<p itemprop="description">I am a <script type="text/javascript">document.write(whichYear)</script>-year Computer Science PhD student at Cornell University.
+			My current research interests are machine learning and its applications in fields such as natural language processing.</p>
+			<p>Before comming to Cornell, I spent wonderful 4 years at <a href="http://www.emory.edu">Emory University</a>, where I worked closely 
 			with <a href="http://www.ymsir.com/">Prof. Ymir Vigfusson</a> on detecting diease outbreak from mobile phone records. I also had a fortune to 
 			work with <a href="http://www.cooperlab.net/">Prof. Lee Cooper</a> on combining neural network with Cox regression for survival analysis.</p>
 			<p>How to pronuance my name? Pronuanciation of my fisrt name is hard for people who are not familar with Chinese 
