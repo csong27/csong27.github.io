@@ -9,8 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
   <link rel="icon" type="image/gif" href="images/favicon.gif">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="responsive.css">
   <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,7 +22,6 @@ s.src = "https://upload.wikimedia.org/wikipedia/commons/c/ca/Ja-Tsu.oga";
 function PlaySound() {
 	s.play();
 }
-
 var yearMap = {
 	1: "first",
 	2: "second",
@@ -35,68 +32,50 @@ var yearMap = {
 	7: "seventh",
 	8: "eighth"
 };
-
 var whichYear = yearMap[new Date().getFullYear() - 2015];
-
 </script>
 
-<body>
-	<div id="w">
-		<header class="clearfix">
-			<div id="info">			
-				<h1><span itemprop="name">Congzheng Song (宋丛峥)</span></h1>
-				<h3><span itemprop="jobTitle">Graduate Student at Cornell University</span></h3>
-				<small itemprop="address"> Address: Gates Hall, Ithaca, NY</span></small>
-				<small><span itemprop="email">Email: <a href="mailto:cs2296@cornell.edu">cs2296@cornell.edu</a></span></small>
-				<small><span itemprop="phone">Phone: 678-882-8741</span></small>
-				<small><span itemprop="cv"><a href="files/cv.pdf">Curricula Vitae (CV)</a></span></small>
-				<span>
-					  <a href="https://github.com/csong27"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>&nbsp &nbsp
-					  <a href="https://www.facebook.com/q8802266"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>&nbsp &nbsp
-					  <a href="https://plus.google.com/u/0/116314531879909191210/about/p/pub"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>&nbsp &nbsp
-					  <a href="https://www.linkedin.com/in/congzheng-song-412584a5"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-				</span>
-			</div>
-			
-			<div id="photo">
-				<img src="images/congzheng_200.jpg" alt="congzheng song resume photo avatar" itemprop="image" />
-			</div>
-		</header>
-		
-		<section id="profile">
-			<h2>About Me</h2>
-			<p itemprop="description">I am a <script type="text/javascript">document.write(whichYear)</script>-year Computer Science PhD student at Cornell University.
-			My current research interests are machine learning and its applications in fields such as natural language processing.</p>
-			<p>Before comming to Cornell, I spent wonderful 4 years at <a href="http://www.emory.edu">Emory University</a>, where I worked closely 
-			with <a href="http://www.ymsir.com/">Prof. Ymir Vigfusson</a> on detecting diease outbreak from mobile phone records. I also had a fortune to 
-			work with <a href="http://www.cooperlab.net/">Prof. Lee Cooper</a> on combining neural network with Cox regression for survival analysis.</p>
-			<p>How to pronuance my name? Pronuanciation of my fisrt name is hard for people who are not familar with Chinese 
-			<a href="https://en.wikipedia.org/wiki/Pinyin">Pinyin</a> system. The letter <b>c</b> in Pinyin is in general pronuanced as <b>ts</b> 
-			(similar to <a style="font-family:'游ゴシック'" onclick="PlaySound()">ツ</a> in Japanese) 
-			and <b>zh</b> is pronuanced as <b>j</b> in <i>enjoy</i>. Thus, my first name sounds like "ts-ong-jeng".</p>
-		</section>		
-		
-		<section id="articles">
-			<h2>Publications</h2>
-			<ol style="margin-bottom: 10px;">
-			  <li>S.Yousefi, <b>C.Song</b>, N.Nauata, L.Cooper <br>
-				<i><a href="http://beta.openreview.net/pdf?id=xnrAg7jmLF1m7RyVi3vG">Learning Genomic Representations to Predict Clinical Outcomes in Cancer</a></i> <br>
-				In <i>International Conference on Learning Representation Workshop</i> (ICLR), San Juan, Puerto Rico, 2016</li>
-			  <li>E.Reinertsen, N.Palmius, <b>C.Song</b>, L.Danon, G.Saemundsdottir, O.Magnusson, G.D.Clifford, Y.Vigfusson <br>
-				<i>Mobile Phone Activity and Population Movement During an Influenza A (H1N1) Outbreak in Iceland</i> <br>
-				In <i>Sleep Medicine and Chronobiology Summer Schools Poster Session</i>, Oxford, UK, 2015</li>
-			</ol>
+<body style="font-family: monospace;margin-left:20px;margin-right:20px">
+<center>
+<h2><b>Congzheng Song</b></h2>
+<span><b>Email: </b><a href="mailto:cs2296@cornell.edu">cs2296@cornell.edu</a></span>
+<br/><br/>
+<span><b>Address: </b>301 Gates Hall, Ithaca, NY, USA</span>
+<br/><br/>
+<span><b>Curricula Vitae: </b><a href="./files/cv.pdf">pdf</a></span>
+<br/><br/>
+<a href="https://github.com/csong27"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>&nbsp 
+<a href="https://www.facebook.com/q8802266"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>&nbsp 
+<a href="https://www.linkedin.com/in/congzheng-song-412584a5"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+</center>
 
-		</section>
+<h2><b>About Me</b></h2>
+<span>
+I am a <script type="text/javascript">document.write(whichYear)</script>-year Computer Science PhD student at Cornell University.
+My current research interests are machine learning and privacy.</span>
+<span>Before comming to Cornell, I spent wonderful 4 years at <a href="http://www.emory.edu">Emory University</a>, where I worked closely 
+with <a href="http://www.ymsir.com/">Prof. Ymir Vigfusson</a> on detecting diease outbreak from mobile phone records. I also had a fortune to 
+work with <a href="http://www.cooperlab.net/">Prof. Lee Cooper</a> on combining neural network with Cox regression for survival analysis.</span>
+<br/>
+<br/>
 
-		<section id="skills" class="clearfix">
-			<h2 itemprop="name">Skillset</h2>
-			<section style=" padding-left: 20px">
-				<h4 itemprop="about">Programming and Scripting Languages</h4> <p>Python, Java, C, HTML/CSS, JavaScript, Latex</p>
-				<h4 itemprop="about">Software &amp Tools </h4> <p>Matlab, Theano, Node.js, MongoDB, PostgreSQL</p>
-			</section>
-		</section>
+<h2><b>Publications</b></h2>
+<ol>
+  <li>S.Yousefi, <b>C.Song</b>, N.Nauata, L.Cooper <br>
+	<i><a href="http://beta.openreview.net/pdf?id=xnrAg7jmLF1m7RyVi3vG">Learning Genomic Representations to Predict Clinical Outcomes in Cancer</a></i> <br>
+	In <i>International Conference on Learning Representation Workshop</i> (ICLR), San Juan, Puerto Rico, 2016</li>
+<br/>
+  <li>E.Reinertsen, N.Palmius, <b>C.Song</b>, L.Danon, G.Saemundsdottir, O.Magnusson, G.D.Clifford, Y.Vigfusson <br>
+	<i>Mobile Phone Activity and Population Movement During an Influenza A (H1N1) Outbreak in Iceland</i> <br>
+	In <i>Sleep Medicine and Chronobiology Summer Schools Poster Session</i>, Oxford, UK, 2015</li>
+</ol>
+<br/>
 
-	</div>
+<h2><b>Skills</b></h2>
+<span><b>Programming and Scripting Languages: </b>Python, Java, C, HTML/CSS, JavaScript, Latex</a></span>
+<br/><br/>
+<span><b>Software &amp Tools: </b>Matlab, Theano, Node.js, MongoDB, PostgreSQL</a></span>
+<br/>
+<br/>
 </body>
-</html>
+
