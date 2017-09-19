@@ -24,6 +24,7 @@ var yearMap = {
 	8: "eighth"
 };
 var d = new Date();
+var last = new Date(document.lastModified);
 var month = d.getMonth();
 var year = d.getFullYear();
 if(month >= 6){
@@ -111,5 +112,5 @@ real world deep learning application projects.</span>
 </ol>
 
 <div style="height:4px;">&nbsp;</div> 
-<span style="float: right"><i>last update: <script>document.write(d.toLocaleDateString());</script></i></span>
+<span style="float: right"><i>last update: <script>document.write(last.toLocaleDateString());</script></i></span>
 </body>
