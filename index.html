@@ -21,7 +21,8 @@ var yearMap = {
 	5: "fifth",
 	6: "sixth",
 	7: "seventh",
-	8: "eighth"
+	8: "eighth",
+	9: "hopefully-not-going-to-get-here"
 };
 var d = new Date();
 var last = new Date(document.lastModified);
@@ -38,11 +39,11 @@ if(month >= 6){
 <style>
 #left_col {
     float: left;
-    width: 75%;
+    width: 55%;
 }
 
 body {
-	font-family: 'Quantico', sans-serif;
+	font-family:  'Quantico', sans-serif, "华文楷体"; 
 	font-size: 13px;
 	word-spacing: 1px;
 }
@@ -59,7 +60,13 @@ a:hover {
 
 <body style="margin-left:20px">
 <div id="left_col">
-<h3><b>Congzheng Song</b></h3>
+
+<div style="float:left; margin-top:1%">
+<img src="./images/me.jpg" style="border-radius: 20px;" width="33%" height="33%">
+</div>
+
+<div style="position:absolute; float:left; margin-left:11%">
+<h3><b>Congzheng Song (宋丛峥)</b></h3>
 <span><b>Email: </b>cs2296@cornell.edu</a></span>
 <br/>
 <div style="height:2px;">&nbsp;</div> 
@@ -75,11 +82,16 @@ a:hover {
 <a href="https://www.facebook.com/csong27"><i class="fa fa-facebook-square fa-1x" aria-hidden="true"></i></a> 
 <a href="https://www.linkedin.com/in/congzheng-song-412584a5"><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i></a>
 <br/>
+</div>
 
+</div>
+
+
+<div id="left_col">
 <h3><b>About Me</b></h3>
 <span>Hello! I am a <script type="text/javascript">document.write(whichYear)</script>-year Computer Science Ph.D. student 
 at <a href="http://www.cs.cornell.edu/">Cornell University</a>. My current research interests are security &amp privacy issues in machine learning.
-Before comming to Cornell, I spent wonderful 4 years at <a href="http://www.mathcs.emory.edu/site/home/">Emory University</a>, 
+I finished my bachelor degree at <a href="http://www.mathcs.emory.edu/site/home/">Emory University</a>, 
 where I worked closely with <a href="http://www.ymsir.com/">Prof. Ymir Vigfusson</a> and <a href="http://www.cooperlab.net/">Prof. Lee Cooper</a> on some fun 
 real world deep learning application projects.</span>
 <br/>
@@ -110,7 +122,8 @@ real world deep learning application projects.</span>
 	<i><a href=#>Mobile Phone Activity and Population Movement During an Influenza A (H1N1) Outbreak in Iceland</a></i> <br>
 	In <i>Sleep Medicine and Chronobiology Summer Schools Poster Session</i>, Oxford, UK, 2015</li>
 </ol>
-
 <div style="height:4px;">&nbsp;</div> 
 <span style="float: right"><i>last update: <script>document.write(last.toLocaleDateString());</script></i></span>
+</div>
+
 </body>
