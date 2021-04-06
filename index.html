@@ -9,8 +9,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
   <link rel="icon" type="image/gif" href="images/favicon.gif">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
+<!--
+Blue: #007bff
+Green: #34c759
+Indigo: #5856d6
+Orange: #ff9500
+Pink: #ff3654
+Purple: #af52de
+Red: #ff3b30
+Teal: #5ac8fa
+Yellow: #ffcc00
+Gray1: #f2f2f7
+Gray2: #8e8e93
+Gray3: #1c1c1e
+-->
 
 <style>
 #left_col1 {
@@ -22,26 +39,36 @@
 
 #left_col2 {
    float: none ;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 25%;
+	margin-right: 25%;
+   padding-top: 10px;
+}
+
+.pdf {
+  border-radius: 5px;
+  background: #5856d6;
+  color: #f2f2f7;
+  padding-top: 0px;
+  padding-right: 3px;
+  padding-bottom: 0px;
+  padding-left: 3px;
 }
 
 body {
-	font-family:  'Quantico', sans-serif, "华文楷体"; 
+	font-family:  'Noto Sans', sans-serif, "Noto Sans SC"; 
 	font-size: 13px;
-	word-spacing: 1px;
-	background-color: Black;
-	color: Ivory;
+	background-color: #f2f2f7;
+	color: #1c1c1e;
 }
 
 a {
-	color: LightSkyBlue;
+	color: #007bff;
 	text-decoration: none;
 }
 
 a:hover {
-	color: hotpink;
-	text-shadow: 1px 1px #a80329;
+	color: #ff3654;
+   text-shadow: 1px 1px #5ac8fa;
 }
 
 h3 {
@@ -51,6 +78,10 @@ h3 {
 
 .myname {
 	text-decoration: underline;
+}
+
+.award {
+	color: #5856d6;
 }
 
 @media only screen and (max-width: 800px) {
@@ -67,11 +98,58 @@ h3 {
 	}
 }
 
+
+/* tell the container's children to float left: */
+.icon {
+	margin-left: 25%
+}
+
+.float-my-children > * {
+   float:left;
+	margin-right: 15px;
+}
+
+/* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+
+.clearfix {
+    *zoom:1 /* for IE */
+
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 </style>
 
 
 <body style="margin-left:20px;margin-top:20px">
 
+<div class="clearfix float-my-children">
+   <img src="./images/me.jpeg"  style="border-radius: 15px;" class="icon" width="150px" height="150px">
+   <div><h3><b>Congzheng Song / 宋丛峥</b></h3>
+   Machine Learning Privacy at Apple
+   <br>
+   Email: cs2296[at]cornell.edu
+   <br>
+   <a href="./files/cv.pdf">Curriculum Vitae&nbsp;<i class="fa fa-file fa-1x" aria-hidden="true"></i></a>
+   <br>
+   <a href="https://scholar.google.com/citations?user=lkPKfjgAAAAJ&hl=en">Google scholar&nbsp;<i class="fa fa-google fa-1x" aria-hidden="true"></i></a>
+   <br>
+   <a href="https://github.com/csong27">Github&nbsp;<i class="fa fa-github fa-1x" aria-hidden="true"></i></a>
+   <br>
+   <a href="https://www.linkedin.com/in/congzheng-song-412584a5">Linkedin&nbsp;<i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i></a>
+   </div>
+</div>
+
+
+<!---
 <div id="left_col1">
 <img src="./images/me.jpeg" style="border-radius: 25px" width="150px" height="150px"/>
 <br/>
@@ -89,19 +167,21 @@ h3 {
 [<a href="https://scholar.google.com/citations?user=lkPKfjgAAAAJ&hl=en">Google scholar&nbsp;<i class="fa fa-google fa-1x" aria-hidden="true"></i></a>]
 [<a href="https://github.com/csong27">Github&nbsp;<i class="fa fa-github fa-1x" aria-hidden="true"></i></a>]
 [<a href="https://www.linkedin.com/in/congzheng-song-412584a5">Linkedin&nbsp;<i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i></a>]
-<br/>
+
+--->
+
+<div id="left_col2">
 
 <h3><b>About Me</b></h3>
-<span>Hello! I am a Computer Science Ph.D. candidate at <a href="http://www.cs.cornell.edu/">Cornell University</a> 
-(physically located at <a href="http://tech.cornell.edu/">Cornell Tech</a>)
-working with <a href="http://www.cs.cornell.edu/~shmat/">Prof. Vitaly Shmatikov</a>. 
-My current research interests are security &amp privacy issues in machine learning.
-I completed my bachelor's degree at <a href="http://www.mathcs.emory.edu/site/home/">Emory University</a>, 
+<span>Hello! I am a researcher and engineer at Apple, working on privacy-preserving machine learning. I completed my  Ph.D. in Computer Science at <a href="http://www.cs.cornell.edu/">Cornell University</a> 
+(<a href="http://tech.cornell.edu/">Cornell Tech</a>)
+with <a href="http://www.cs.cornell.edu/~shmat/">Prof. Vitaly Shmatikov</a>. 
+Before that, I received my bachelor's degree at <a href="http://www.mathcs.emory.edu/site/home/">Emory University</a>, 
 where I worked closely with <a href="http://www.ymsir.com/">Prof. Ymir Vigfusson</a> and <a href="http://cancerdata.io/">Prof. Lee Cooper</a> on some fun 
 real world deep learning application projects.</span>
 <br/>
 
-<h3><b>Industrial Experience</b></h3>
+<h3><b>Past Experience</b></h3>
 <span>Applied scientist intern at Amazon, Summer 2020</span>
 <br/>
 <span>Research intern at Google Brain, Fall 2019</span>
@@ -112,12 +192,20 @@ real world deep learning application projects.</span>
 <h3 style="margin-bottom:0px; padding:0px"><b>Publications</b></h3>  
 <p style="margin:0px; padding:0px">(* indicates equal contribution)</p>
 
-<ol style="padding-left:20px;">
+<ul style="padding-left:0px;list-style-type:none;">
 	<li>
 	You Autocomplete Me: Poisoning Vulnerabilities in Neural Code Completion
 	[<a href="https://arxiv.org/pdf/2007.02220.pdf">pdf</a>]<br>
 	R.Schuster, <b class="myname">C.Song</b>, E. Tromer, V.Shmatikov<br> 
 	To appear in <i>USENIX Security Symposium</i>, 2021
+	</li>
+	<br/>
+
+	<li>
+	Cell-phone Traces Reveal Infection-associated Behavioral Change
+	[<a href="https://www.pnas.org/content/118/6/e2005241118">pdf</a>][<a href="https://github.com/SimBioSysLab/cdr-open-code">code</a>]<br>
+	Y.Vigfusson, T.A.Karlsson, D.Onken, <b class="myname">C.Song</b>, A.F.Einarsson, N.Kishore, R.M.Mitchell, E.Brooks-Pollock, G.Sigmundsdottir, L.Danon<br> 
+	In <i>Proceedings of the National Academy of Sciences of the United States of America</i> (PNAS), 2021
 	</li>
 	<br/>
 
@@ -166,7 +254,7 @@ real world deep learning application projects.</span>
 	[<a href="https://arxiv.org/pdf/1811.00513.pdf">pdf</a>][<a href="https://github.com/csong27/auditing-text-generation">code</a>][<a href="./files/kdd2019.pptx">slides</a>]<br>
     <b class="myname">C.Song</b>, V.Shmatikov<br> 
 	In <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining</i> (KDD), 2019<br>
-	<b style="color:Plum"> Oral Presentation</b>
+	<b class="award"> Oral Presentation</b>
 	</li>
 	<br/>
 
@@ -191,15 +279,15 @@ real world deep learning application projects.</span>
 	[<a href="https://arxiv.org/pdf/1801.10273.pdf">pdf</a>][<a href="https://github.com/csong27/kernel-distill">code</a>]<br>
 	<b class="myname">C.Song</b>*, Y.Sun*<br> 
 	In <i>NeurIPS Workshop on All of Bayesian Nonparametrics</i> (BNP@NeurIPS), 2018<br>
-	<b style="color:Plum"> Spotlight Presentation</b>
+	<b class="award"> Spotlight Presentation</b>
 	</li>
 	<br/>
 
 	<li>
 	Predicting Clinical Outcomes from Large Scale Cancer Genomic Profiles with Deep Survival Models
-	[<a href="https://www.nature.com/articles/s41598-017-11817-6">pdf</a>][<a href="https://github.com/cooperlab/SurvivalNetTF">code</a>] <br>
+	[<a href="https://www.nature.com/articles/s41598-017-11817-6">pdf</a>][<a href="https://github.com/CancerDataScience/SurvivalNet">code</a>] <br>
     S.Yousefi, F.Amrollahi, M.Amgad, C.Dong, J.E.Lewis, <b class="myname">C.Song</b>, D.A.Gutman, S.H.Halani, J.E.V.Vega, D.J.Brat, L.A.D.Cooper<br>
-	In <i>Scientific Reports 7</i> (Nature), 2017
+	In <i>Scientific Reports</i> (Nature), 2017
 	</li>
 	<br/>
 
@@ -216,7 +304,7 @@ real world deep learning application projects.</span>
 	[<a href="https://arxiv.org/pdf/1610.05820.pdf">pdf</a>][<a href="https://github.com/csong27/membership-inference">code</a>][<a href="https://youtu.be/rDm1n2gceJY">talk</a>]<br>
 	R.Shokri, M.Stronati, <b class="myname">C.Song</b>, V.Shmatikov <br>
 	In <i>IEEE Symposium on Security and Privacy</i> (Oakland), 2017<br>
-	<b style="color:Plum">The Caspar Bowden Award for Outstanding Research in Privacy Enhancing Technologies 2018</b>
+	<b class="award">The Caspar Bowden Award for Outstanding Research in Privacy Enhancing Technologies 2018</b>
 	</li>
 	<br/>
 
@@ -226,10 +314,10 @@ real world deep learning application projects.</span>
 	S.Yousefi, <b class="myname">C.Song</b>, N.Nauata, L.Cooper <br>
 	In <i>International Conference on Learning Representation Workshop</i> (ICLRW), 2016
 	</li>
-</ol>
+</ul>
 
 <h3 style="margin-bottom:0px; padding:0px"><b>Manuscripts</b></h3>  
-<ol style="padding-left:20px;">
+<ul style="padding-left:0px;list-style-type:none;">
 	<li>
 	Chiron: Privacy-preserving Machine Learning as a Service
 	[<a href="https://arxiv.org/pdf/1803.05961.pdf">pdf</a>]<br>
@@ -244,12 +332,8 @@ real world deep learning application projects.</span>
 	<b class="myname">C.Song</b>, V.Shmatikov<br> 
 	In <i>arXiv preprint</i>, 2018
 	</li>
-</ol>
+</ul>
 
-<!--
-<h3><b>Miscellaneous</b></h3>
-<span>Lyrics by 姬赓: </span> [<a href="./files/lyrics/乌云典当记.txt">乌云典当记</a>] [<a href="./files/lyrics/揪心的玩笑与漫长的白日梦.txt">揪心的玩笑与漫长的白日梦</a>] [<a href="./files/lyrics/大石碎胸口.txt">大石碎胸口</a>] [<a href="./files/lyrics/秦皇岛.txt">秦皇岛</a>] [<a href="./files/lyrics/在这颗行星所有的酒馆.txt">在这颗行星所有的酒馆</a>] [<a href="./files/lyrics/冀西南林路行.txt">冀西南林路行</a>]
--->
 
 </div>
 
